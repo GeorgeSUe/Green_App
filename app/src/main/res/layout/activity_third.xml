@@ -10,41 +10,42 @@
 
     <Spinner
         android:id="@+id/spinner3"
-        android:layout_width="175dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginBottom="38dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="98dp"
+        android:background="#F4F3F3"
         android:backgroundTint="#FFFFFF"
         android:dropDownWidth="match_parent"
         android:entries="@array/stores_array"
         app:layout_constraintBottom_toTopOf="@+id/spinner5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spinner5"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Spinner
         android:id="@+id/spinner5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="97dp"
+        android:background="#F4F3F3"
         android:backgroundTint="#FFFFFF"
         android:dropDownWidth="match_parent"
         android:entries="@array/local_stores_array"
         app:layout_constraintBottom_toTopOf="@+id/spinner4"
-        app:layout_constraintEnd_toEndOf="@+id/spinner4"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/spinner3"
+        app:layout_constraintStart_toStartOf="@+id/spinner4"
         app:layout_constraintTop_toBottomOf="@+id/spinner3" />
 
     <Spinner
         android:id="@+id/spinner4"
-        android:layout_width="154dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="313dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="98dp"
+        android:background="#F4F3F3"
         android:backgroundTint="#FFFFFF"
         android:dropDownWidth="match_parent"
         android:entries="@array/location_array"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonnext2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner5" />
 
@@ -52,14 +53,58 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="126dp"
-        android:layout_marginBottom="66dp"
+        android:layout_marginBottom="97dp"
         android:text="@string/consumer2"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/spinner3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonnext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner4" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="22dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/spinner3"
+        app:layout_constraintStart_toStartOf="@+id/spinner3" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="21dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/spinner5"
+        app:layout_constraintEnd_toEndOf="@+id/spinner5" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/spinner4"
+        app:layout_constraintStart_toStartOf="@+id/spinner4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
