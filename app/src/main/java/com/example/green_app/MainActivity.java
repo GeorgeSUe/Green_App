@@ -9,15 +9,15 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button;
+    private Button start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button) findViewById(R.id.start);
-        button.setOnClickListener(new View.OnClickListener(){
+        start = (Button) findViewById(R.id.start);
+        start.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v){
@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
                 openHomepageActivity();
             }
         });
-
-
     }
 
     private void openHomepageActivity() {

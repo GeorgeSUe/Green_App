@@ -17,8 +17,7 @@
         android:text="@string/consumer"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button_trending_keywords"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_trending_keywords"
         app:layout_constraintTop_toBottomOf="@+id/textView_or" />
 
     <TextView
@@ -31,8 +30,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button_consumer_first_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_consumer_first_layout"
         app:layout_constraintTop_toBottomOf="@+id/button_business_first_layout" />
 
     <TextView
@@ -46,15 +44,13 @@
         android:textColor="#FFFFFF"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/textView_are_you_a"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView_are_you_a"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_are_you_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginBottom="25dp"
         android:gravity="center"
         android:text="@string/are_you_a"
@@ -69,13 +65,12 @@
         android:id="@+id/button_business_first_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
         android:layout_marginBottom="16dp"
         android:gravity="center"
         android:text="@string/business"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView_or"
-        app:layout_constraintStart_toStartOf="@+id/button_consumer_first_layout"
+        app:layout_constraintStart_toStartOf="@+id/textView_or"
         app:layout_constraintTop_toBottomOf="@+id/textView_are_you_a" />
 
     <Button
@@ -88,6 +83,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_consumer_first_layout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
