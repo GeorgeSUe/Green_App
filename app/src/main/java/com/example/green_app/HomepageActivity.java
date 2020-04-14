@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class HomepageActivity extends AppCompatActivity {
-    private Button buttonbusiness,buttonconsumer;
+    private Button buttonbusiness,buttonconsumer,buttontrending;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,18 @@ public class HomepageActivity extends AppCompatActivity {
 
             }
         });
+        buttontrending = (Button) findViewById(R.id.button_trending_keywords);
+        buttontrending.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opentrending();
+            }
+        });
+    }
+
+    private void opentrending() {
+        Intent keytrending = new Intent(this, FourActivity.class);
+        startActivity(keytrending);
     }
 
     private void openThirdActivity() {

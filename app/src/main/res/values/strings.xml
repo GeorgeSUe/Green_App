@@ -24,6 +24,11 @@
     <string name="homelogo">homelogo</string>
     <string name="button2">Button</string>
     <string name="start">start</string>
+    <string name="paper_towels">Paper Towels</string>
+    <string name="bread">Bread</string>
+    <string name="order_now">Order Now</string>
+    <string name="water">Water</string>
+    <string name="import_more">Import More:</string>
 
 
 </resources>
