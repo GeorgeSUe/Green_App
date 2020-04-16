@@ -160,4 +160,14 @@
         app:layout_constraintBottom_toTopOf="@+id/checkBox3"
         app:layout_constraintStart_toStartOf="@+id/checkBox3" />
 
+    <Button
+        android:id="@+id/mapbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="54dp"
+        android:text="@string/title_activity_maps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
