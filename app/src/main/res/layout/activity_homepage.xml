@@ -4,19 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3A3A3A"
-    android:backgroundTint="#3A3A3A"
+    android:background="#38B6FF"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button_consumer_first_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="116dp"
+        android:layout_marginTop="52dp"
         android:gravity="center"
         android:text="@string/consumer"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_trending_keywords"
         app:layout_constraintStart_toStartOf="@+id/button_trending_keywords"
         app:layout_constraintTop_toBottomOf="@+id/textView_or" />
 
@@ -24,26 +22,22 @@
         android:id="@+id/textView_or"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="25dp"
         android:gravity="center"
         android:text="@string/or"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_consumer_first_layout"
         app:layout_constraintStart_toStartOf="@+id/button_consumer_first_layout"
         app:layout_constraintTop_toBottomOf="@+id/button_business_first_layout" />
 
     <TextView
         android:id="@+id/textView_green_fix"
-        android:layout_width="185dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="143dp"
-        android:layout_marginBottom="23dp"
-        android:gravity="center"
-        android:text="@string/green_fix"
-        android:textColor="#FFFFFF"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="116dp"
+        android:text="@string/Pick_Me_Up"
+        android:textColor="#000000"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView_are_you_a"
         app:layout_constraintStart_toStartOf="@+id/textView_are_you_a"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,13 +45,12 @@
         android:id="@+id/textView_are_you_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
+        android:layout_marginTop="27dp"
         android:gravity="center"
         android:text="@string/are_you_a"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textColorLink="#ECE5E5"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_business_first_layout"
         app:layout_constraintStart_toStartOf="@+id/button_business_first_layout"
         app:layout_constraintTop_toBottomOf="@+id/textView_green_fix" />
 
@@ -65,11 +58,10 @@
         android:id="@+id/button_business_first_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="@string/business"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView_or"
         app:layout_constraintStart_toStartOf="@+id/textView_or"
         app:layout_constraintTop_toBottomOf="@+id/textView_are_you_a" />
 
@@ -77,13 +69,24 @@
         android:id="@+id/button_trending_keywords"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="137dp"
+        android:layout_marginTop="52dp"
         android:gravity="center"
         android:text="@string/trending_keywords"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_consumer_first_layout" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="40dp"
+        android:background="#38B6FF"
+        android:contentDescription="@string/chatbot"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
 </androidx.constraintlayout.widget.ConstraintLayout>

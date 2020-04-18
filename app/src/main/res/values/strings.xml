@@ -29,6 +29,9 @@
     <string name="order_now">Order Now</string>
     <string name="water">Water</string>
     <string name="import_more">Import More:</string>
+    <string name="logo">logo</string>
+    <string name="Pick_Me_Up">Pick Me Up</string>
+    <string name="chatbot">chatbot</string>
 
 
 </resources>
