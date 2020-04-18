@@ -1,8 +1,10 @@
 package com.example.green_app;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class ChatbotActivity extends AppCompatActivity {
 
@@ -11,4 +13,8 @@ public class ChatbotActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatbot);
     }
+
+
+
+
 }
