@@ -11,15 +11,14 @@
         android:id="@+id/chatbot4"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="631dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="40dp"
-        android:background="#FFEB3B"
+        android:backgroundTint="#000000"
         android:contentDescription="@string/chatbot"
         android:scaleType="fitXY"
+        android:tint="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/stat_notify_chat" />
 
     <ImageView
@@ -34,17 +33,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/toastmsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="371dp"
-        android:layout_marginBottom="312dp"
+        android:layout_marginBottom="260dp"
         android:onClick="displayToastMsg"
         android:text="@string/showmore"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/seetrending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="468dp"
+        android:text="@string/see_trending"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
