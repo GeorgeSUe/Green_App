@@ -32,6 +32,8 @@
     <string name="logo">logo</string>
     <string name="Pick_Me_Up">Pick Me Up</string>
     <string name="chatbot">chatbot</string>
+    <string name="showmore">showmore</string>
+    <string name="displaytoast">displaytoast</string>
 
 
 </resources>

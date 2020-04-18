@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 
 public class HomepageActivity extends AppCompatActivity {
     private Button buttonbusiness,buttonconsumer,buttontrending;
+    private ImageButton chatbot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +42,22 @@ public class HomepageActivity extends AppCompatActivity {
             }
         });
 
+        chatbot = (ImageButton) findViewById(R.id.chatbot2);
+        chatbot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openChatbotActivity();
+
+            }
+        });
 
 
+
+    }
+
+    private void openChatbotActivity() {
+        Intent chattingbot = new Intent(this,ChatbotActivity.class);
+        startActivity(chattingbot);
     }
 
     private void opentrending() {

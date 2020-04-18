@@ -4,139 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3A3A3A"
-    android:backgroundTint="#3A3A3A"
+    android:background="#FFEB3B"
     tools:context=".AfterSecondActivity">
 
-    <TextView
-        android:id="@+id/textView2"
+    <ImageButton
+        android:id="@+id/chatbot4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="631dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="40dp"
+        android:background="#FFEB3B"
+        android:contentDescription="@string/chatbot"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
+
+    <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="111dp"
-        android:gravity="center"
-        android:text="@string/prediction_of_high_demand_items"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="105dp"
+        android:contentDescription="@string/displaytoast"
+        android:src="@drawable/examplechart"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:text="@string/paper_towels"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/progressBar3"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
-
-    <ProgressBar
-        android:id="@+id/progressBar3"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="15dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#FFFFFF"
-        android:max="100"
-        android:progress="35"
-        app:layout_constraintEnd_toStartOf="@+id/textView8"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView8" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="26dp"
-        android:text="@string/water"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/progressBar2"
-        app:layout_constraintTop_toTopOf="@+id/progressBar2" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="12dp"
-        android:text="@string/bread"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/progressBar" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="15dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#FFFFFF"
-        android:max="100"
-        android:progress="20"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="15dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#FFFFFF"
-        android:max="100"
-        android:progress="80"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="237dp"
-        android:layout_marginBottom="237dp"
-        android:text="@string/order_now"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="371dp"
+        android:layout_marginBottom="312dp"
+        android:onClick="displayToastMsg"
+        android:text="@string/showmore"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="11dp"
-        android:text="@string/water"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginBottom="54dp"
-        android:text="@string/import_more"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
