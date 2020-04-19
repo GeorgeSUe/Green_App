@@ -29,6 +29,15 @@
     <string name="order_now">Order Now</string>
     <string name="water">Water</string>
     <string name="import_more">Import More:</string>
+    <string name="logo">logo</string>
+    <string name="Pick_Me_Up">Pick Me Up</string>
+    <string name="chatbot">chatbot</string>
+    <string name="showmore">showmore</string>
+    <string name="displaytoast">displaytoast</string>
+    <string name="see_trending">See Trending</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="heatmap">heatmap</string>
 
 
 </resources>
